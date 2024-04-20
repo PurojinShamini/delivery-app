@@ -1,0 +1,28 @@
+<div>
+  <swiper-container (swiperslidechange)="onSlideChange($event)">
+    <swiper-slide>
+      <div class="slide1-bgimg"></div>
+      <p class="heading">Onboarding 1</p>
+      <p class="definition">Managing your money can be the easiest thing you do all day.</p>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="slide2-bgimg"></div>
+      <p class="heading">Onboarding 2</p>
+      <p class="definition">Managing your money can be the easiest thing you do all day.</p>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="slide3-bgimg"></div>
+      <p class="heading">Onboarding 3</p>
+      <p class="definition">Managing your money can be the easiest thing you do all day.</p>
+    </swiper-slide>
+  </swiper-container>
+  <div class="carousel-controls-container">
+    <div class="carousel-control" [ngClass]="{'carousel-control--active': slideCurrentIndex==0}"></div>
+    <div class="carousel-control" [ngClass]="{'carousel-control--active': slideCurrentIndex==1}"></div>
+    <div class="carousel-control" [ngClass]="{'carousel-control--active': slideCurrentIndex==2}"></div>
+  </div>
+  <div>
+    <button class="white-button">Log In</button>
+    <button class="primary-button">Sign-Up</button>
+  </div>
+</div>

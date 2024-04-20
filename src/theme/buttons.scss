@@ -1,0 +1,33 @@
+@import "./app-variable.scss";
+
+
+
+.base-button{
+    padding: 18px;
+    min-width: 140px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px 0px $color-shadow;
+}
+
+.primary-button{
+    @extend .base-button;
+    background: linear-gradient(90deg, $color-primary1 0%, $color-primary2 100%);
+    color: $color-white;
+}
+.white-button{
+    @extend .base-button;
+    background: #FFFFFF;
+    color:$color-primary1;
+    margin-left: 32px;
+    margin-right: 20px;
+}
+.green-button{
+    @extend .base-button;
+    background: linear-gradient(90deg, #00C1AB 0%, #00AF8B 100%);
+    color: $color-white;
+}
+.red-button{
+    @extend .base-button;
+    background: linear-gradient(90deg, #FF4500 0%, #D91D1D 100%);
+    color: $color-white;
+}

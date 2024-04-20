@@ -1,0 +1,73 @@
+@import "../../theme/app-variable.scss";
+
+
+.slide_img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    padding-top: 20%;
+}
+.icon_img{
+    padding-top: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10%;
+}
+.heading {
+    width: 100%;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    text-align: center;
+    color: $color-primary1;
+    background: -webkit-linear-gradient(90deg, $color-primary1 0%, $color-primary2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.definition {
+    text-align: center;
+    line-height: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bgimg{
+    margin-top: 10vh;
+    background-size: contain;
+    height: 42vh;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+.slide1-bgimg{
+    @extend .bgimg;
+    background-image: url('../../assets/images/login_slide1.png');
+}
+
+.slide2-bgimg{
+    @extend .bgimg;
+    background-image: url('../../assets/images/login_slide2.png');
+}
+.slide3-bgimg{
+    @extend .bgimg;
+    background-image: url('../../assets/images/login_slide3.png');
+}
+.carousel-controls-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 52px;
+    margin-top: 12px;
+}
+.carousel-control{
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: $color-bg-grey;
+}
+
+.carousel-control--active{
+    background: -webkit-linear-gradient(90deg, $color-primary1 0%, $color-primary2 100%);
+}
